@@ -2,6 +2,7 @@ import scipy.linalg as sl
 import numpy as np
 import time
 import matplotlib.pyplot as plt
+import matplotlib
 from math import sqrt
 
 def seidel(A, f, n):
@@ -27,8 +28,8 @@ step = 100
 finish, start = 0, 0
 fn, st = 0, 0
 while finish - start < 1:
-	A = np.random.uniform(0,10,(n,n))
-	f = np.random.uniform(0,10,(n))
+	A = np.random.randint(0, 10, size=(n,n))
+	f = np.random.randint(0, 10, size=(n))
 	s = np.sum(np.abs(A), axis = 1)
 	for i in range(n):
 		A[i][i] = A[i][i] + s[i]
@@ -43,9 +44,11 @@ while finish - start < 1:
 	n += step
 
 x = [y for y in range(n0, n + 1, step)]
+fig = plt.figure()
 plt.plot(x, myTime, label="My time")
 plt.plot(x, npTime, label="Numpy time")
 plt.xlabel("n")
 plt.ylabel("time (sec)")
-plt.legend(bbox_to_anchor=(0.5, 0., 0.5, 0.5), loc=0, borderaxespad=0.)
+plt.legend(bbox_to_anchor=(0.5, 0.5, 0.5, 0.5), loc='upper center')
 plt.show()
+fig.savefig('hw2/seidel.png')

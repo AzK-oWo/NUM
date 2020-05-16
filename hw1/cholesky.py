@@ -1,6 +1,7 @@
 import numpy as np
 import time
 import matplotlib.pyplot as plt
+import matplotlib
 from random import randint
 
 def cholesky(array, n):
@@ -28,7 +29,7 @@ step = 50
 start, finish = 0, 0
 _start, _finish = 0, 0
 while finish - start <= 1:
-	f = np.random.uniform(0, 100, (n))
+	f = np.random.randint(0, 10, size=(n))
 	A = np.tril(np.random.rand(n, n))
 	for i in range(n):
 		A[i][i] = 100
@@ -42,9 +43,11 @@ while finish - start <= 1:
 	_time.append(_finish - _start)
 	n += step
 x = [y for y in range(n0, n + 1, step)]
+fig = plt.figure()
 plt.plot(x, my_time, label="My time")
 plt.plot(x, _time, label="Numpy time")
 plt.xlabel("n")
 plt.ylabel("time (sec)")
-plt.legend(bbox_to_anchor=(0.5, 0., 0.5, 0.5), loc=0, borderaxespad=0.)
+plt.legend(bbox_to_anchor=(0.5, 0.5, 0.5, 0.5), loc='upper center')
 plt.show()
+fig.savefig('hw1/cholesky.png')

@@ -34,6 +34,14 @@ The plot of *time/matrix size*
 
 ## HW3 - Interpolation
 
+### What about it:
+These methods include   
+* [*linear*](https://en.wikipedia.org/wiki/Linear_interpolation)  
+* [*Lagrange*](https://en.wikipedia.org/wiki/Lagrange_polynomial)  
+* [*spline*](https://en.wikipedia.org/wiki/Spline_interpolation)  
+methods
+
+
 ### Before the start:
 need to create data of point and new set _z_  
 *train.dat* - value x0 < x1 < ... < xn  

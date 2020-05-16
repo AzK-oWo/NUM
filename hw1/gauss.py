@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import matplotlib
 import numpy as np
 import scipy.linalg as sl
 import time
@@ -36,8 +37,8 @@ step = 10
 start, finish = 0, 0
 _start, _finish = 0, 0
 while finish - start <= 1:
-	A = np.random.uniform(0, 100, (n, n))
-	f = np.random.uniform(0, 100, (n))
+	A = np.random.rand(n, n)
+	f = np.random.rand(n)
 	start = time.time()
 	gauss(A, f)
 	finish = time.time()
@@ -48,9 +49,11 @@ while finish - start <= 1:
 	_time.append(_finish - _start)
 	n += step
 x = [y for y in range(n0, n + 1, step)]
+fig = plt.figure()
 plt.plot(x, my_time, label="My time")
 plt.plot(x, _time, label="Numpy time")
 plt.xlabel("n")
 plt.ylabel("time (sec)")
-plt.legend(bbox_to_anchor=(0.5, 0., 0.5, 0.5), loc=0, borderaxespad=0.)
+plt.legend(bbox_to_anchor=(0.5, 0.5, 0.5, 0.5), loc='upper center')
 plt.show()
+fig.savefig('hw1/gauss.png')
