@@ -1,6 +1,6 @@
 import numpy as np
 
-def makeLines(x, y):
+def makeCoefficent(x, y):
 	n = len(x) - 1
 	coef = np.zeros(n)
 	for i in range(n):
@@ -11,7 +11,7 @@ def linearInterpolation(x, y ,z):
 	n = len(x) - 1
 	m = len(z)
 	ans = np.zeros(n)
-	coef = makeLines(x, y)
+	coef = makeCoefficent(x, y)
 	for i in range(m):
 		for j in range(n):
 			if x[j] <= z[i]:
@@ -30,6 +30,7 @@ def write_file(name, vec):
 	for i in range(m):
 		file.write(str(v[i]))
 		file.write(' ')
+	file.close()
 
 x, y, z = [], [], []
 read_file("hw3/train.dat", x)

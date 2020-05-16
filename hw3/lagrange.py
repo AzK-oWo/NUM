@@ -30,6 +30,7 @@ def write_file(name, vec):
 	for i in range(m):
 		file.write(str(v[i]))
 		file.write(' ')
+	file.close()
 
 x, y, z = [], [], []
 read_file("hw3/train.dat", x)

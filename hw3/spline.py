@@ -28,7 +28,7 @@ def generateSpline(x, y):
 		A[i] = (B[i + 1] - B[i]) / (3 * h)
 		C[i] = (y[i + 1] - y[i]) / h - (B[i + 1] + 2 * B[i]) * h / 3
 		D[i] = y[i]
-	return A,B,C,D
+	return A, B, C, D
 
 def splineInterpolation(x, y, z):
 	m = len(z)
@@ -53,6 +53,7 @@ def write_file(name, vec):
 	for i in range(m):
 		file.write(str(v[i]))
 		file.write(' ')
+	file.close()
 
 x, y, z = [], [], []
 read_file("hw3/train.dat", x)
