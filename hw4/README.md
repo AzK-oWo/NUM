@@ -1,7 +1,7 @@
 # HW4
 
+Transfer:  
+![Transfer](https://github.com/AzK-oWo/NUM/blob/master/hw4/transfer.mp4)
 
-![Transfer](/home/azkowo/Projects/NUM/hw1/transfer.mp4)
-
-
-![Heat](/home/azkowo/Projects/NUM/hw1/heat.mp4)
+Heat:  
+![Heat](https://github.com/AzK-oWo/NUM/blob/master/hw4/heat.mp4)

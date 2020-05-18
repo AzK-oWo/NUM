@@ -1,7 +1,7 @@
 # HW2
 
+Seidel:  
+![Seidel](https://github.com/AzK-oWo/NUM/blob/master/hw2/seidel.png)
 
-![Seidel](/home/azkowo/Projects/NUM/hw1/seidel.png)
-
-
-![Jacobi](/home/azkowo/Projects/NUM/hw1/jacobi.png)
+Jacobi:  
+![Jacobi](https://github.com/AzK-oWo/NUM/blob/master/hw2/jacobi.png)
