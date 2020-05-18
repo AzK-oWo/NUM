@@ -1,7 +1,7 @@
 # HW2
 
 
-![Seidel](/seidel.png)
+![Seidel](/home/azkowo/Projects/NUM/hw1/seidel.png)
 
 
-![Jacobi](/jacobi.png)
+![Jacobi](/home/azkowo/Projects/NUM/hw1/jacobi.png)
