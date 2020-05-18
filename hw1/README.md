@@ -1,10 +1,10 @@
 # HW1
 
 
-![Gauss](/Projects/NUM/hw1/gauss.png)
+![Gauss](/gauss.png)
 
 
-![Sweep](/Projects/NUM/hw1/sweep.png)
+![Sweep](/sweep.png)
 
 
-![Cholesky](/Projects/NUM/hw1/cholesky.png)
+![Cholesky](/cholesky.png)

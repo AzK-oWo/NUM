@@ -1,7 +1,7 @@
 # HW4
 
 
-![Transfer](/Projects/NUM/hw1/transfer.png)
+![Transfer](/transfer.mp4)
 
 
-![Heat](/Projects/NUM/hw1/heat.png)
+![Heat](/heat.mp4)
